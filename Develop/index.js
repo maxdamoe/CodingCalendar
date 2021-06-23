@@ -8,22 +8,25 @@ let M = moment()
 let timeAddition = M.subtract()
 let getHour = M.get("hour")
 
+let past = "past"
+let current = "current"
+let future = "future"
 
 console.log(getHour)
 
-var nine = document.getElementById("9AM") 
-let ten = document.getElementById("10AM")
-let eleven = document.getElementById("11AM")
-let twelve = document.getElementById("12AM")
-let thirteen = document.getElementById("1PM")
-let fourteen = document.getElementById("2PM")
-let fifteen = document.getElementById("3PM")
-let sixteen = document.getElementById("4PM")
-let seventeen = document.getElementById("5PM")
+var bar1 = document.getElementById("9AM") 
+let bar2 = document.getElementById("10AM")
+let bar3 = document.getElementById("11AM")
+let bar4 = document.getElementById("12AM")
+let bar5 = document.getElementById("1PM")
+let bar6 = document.getElementById("2PM")
+let bar7 = document.getElementById("3PM")
+let bar8 = document.getElementById("4PM")
+let bar9 = document.getElementById("5PM")
 
-nine = 9
-ten = 10
-eleven = 11
+nine = 9, bar1;
+ten = 10 , bar2;
+eleven = 11 
 twelve = 12
 thirteen = 13
 fourteen = 14
@@ -31,16 +34,35 @@ fifteen = 15
 sixteen = 16
 seventeen = 17
 
+const poop = Array.from(document.getElementsByClassName('col-6'));
+
+console.log(poop)
+
+
 
 
 let timeArray = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen]
 
-for (var i = 0; i < 9; i++) {
-    if (timeArray[i] === getHour){console.log('true')
-} else  {
-    console.log('false')
-}}
+for (var i = 0; i < poop.length; i++) {
 
+    if (timeArray[i] < getHour){ 
+        bar1.classList.add(past)
+        bar2.classList.add(past)
+        bar3.classList.add(past)
+        bar4.classList.add(past)
+        bar5.classList.add(past)
+        bar6.classList.add(past)
+        bar7.classList.add(past)
+        bar8.classList.add(past)
+        bar9.classList.add(past)
+
+} else if (timeArray[i] === getHour) 
+{
+    console.log('current')
+
+} else {
+    console.log('future')
+}}
 
 
 
