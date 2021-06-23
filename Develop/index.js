@@ -11,7 +11,53 @@ let getHour = M.get("hour")
 
 console.log(getHour)
 
-//if (getHour !==  
+var nine = document.getElementById("9AM") 
+let ten = document.getElementById("10AM")
+let eleven = document.getElementById("11AM")
+let twelve = document.getElementById("12AM")
+let thirteen = document.getElementById("1PM")
+let fourteen = document.getElementById("2PM")
+let fifteen = document.getElementById("3PM")
+let sixteen = document.getElementById("4PM")
+let seventeen = document.getElementById("5PM")
+
+nine = 9
+ten = 10
+eleven = 11
+twelve = 12
+thirteen = 13
+fourteen = 14
+fifteen = 15
+sixteen = 16
+seventeen = 17
+
+
+
+let timeArray = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen]
+
+for (var i = 0; i < 9; i++) {
+    if (timeArray[i] === getHour){console.log('true')
+} else  {
+    console.log('false')
+}}
+
+
+
+
+
+// function future(){
+//     console.log("ass")
+// }
+
+// if (poop !== getHour){
+//     future()
+// } else {
+//     //document.getElementsByClassName("hour").classList.add("past")
+//     console.log(pussy)
+// }
+
+
+//push all the ids to an array, and then loop through the array
 
 //IF the schedule hour is in the past based on the current hour, THEN make bar grey
 //IF the schedule hour is the current hour, THEN make bar red
@@ -58,4 +104,4 @@ console.log(getHour)
 
 // if save button clicked, we need to add to local storage
 
-//let happening = document.getElementsByClassName("clicked")
+//let happening = document.getElementsByClassName("clicked"
