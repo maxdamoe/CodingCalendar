@@ -9,7 +9,7 @@ let timeAddition = M.subtract()
 let getHour = M.get("hour")
 
 let past = "past"
-let current = "current"
+let present = "present"
 let future = "future"
 
 console.log(getHour)
@@ -24,8 +24,8 @@ let bar7 = document.getElementById("3PM")
 let bar8 = document.getElementById("4PM")
 let bar9 = document.getElementById("5PM")
 
-nine = 9, bar1;
-ten = 10 , bar2;
+nine = 9
+ten = 10
 eleven = 11 
 twelve = 12
 thirteen = 13
@@ -33,6 +33,8 @@ fourteen = 14
 fifteen = 15
 sixteen = 16
 seventeen = 17
+
+
 
 const poop = Array.from(document.getElementsByClassName('col-6'));
 
@@ -45,24 +47,118 @@ let timeArray = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen
 
 for (var i = 0; i < poop.length; i++) {
 
-    if (timeArray[i] < getHour){ 
-        bar1.classList.add(past)
+    // if statements for the past 
+
+    if (timeArray[i] < getHour && (timeArray[i] = 9 )){ 
+        bar1.classList.add(past) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 10 )){
         bar2.classList.add(past)
+} 
+    if (timeArray[i] < getHour && (timeArray[i] = 11 )){
         bar3.classList.add(past)
+} 
+    if (timeArray[i] < getHour && (timeArray[i] = 12 )){
         bar4.classList.add(past)
+} 
+    if (timeArray[i] < getHour && (timeArray[i] = 13 )){
         bar5.classList.add(past)
+} 
+    if (timeArray[i] < getHour && (timeArray[i] = 14 )){
         bar6.classList.add(past)
+} 
+    if (timeArray[i] < getHour && (timeArray[i] = 15 )){
         bar7.classList.add(past)
+}   
+    if (timeArray[i] < getHour && (timeArray[i] = 16 )){ 
         bar8.classList.add(past)
+} 
+    if (timeArray[i] < getHour && (timeArray[i] = 17 )){
         bar9.classList.add(past)
-
-} else if (timeArray[i] === getHour) 
-{
-    console.log('current')
-
-} else {
-    console.log('future')
+    
 }}
+
+// // If statements for the present
+
+    if (timeArray[i] === getHour && (timeArray[i] = 9)) {
+        bar1.classList.add(present)    
+} 
+    if (timeArray[i] === getHour && (timeArray[i] = 10)) {
+        bar2.classList.add(present)    
+} 
+    if (timeArray[i] === getHour && (timeArray[i] = 11)) {
+        bar3.classList.add(present)    
+}
+    if (timeArray[i] === getHour && (timeArray[i] = 12)) {
+        bar4.classList.add(present)    
+} 
+    if (timeArray[i] === getHour && (timeArray[i] = 13)) {
+        bar5.classList.add(present)    
+} 
+    if (timeArray[i] === getHour && (timeArray[i] = 14)) {
+        bar6.classList.add(present)    
+} 
+    if (timeArray[i] === getHour && (timeArray[i] = 15)) {
+        bar7.classList.add(present)    
+} 
+    if (timeArray[i] === getHour && (timeArray[i] = 16)) {
+        bar8.classList.add(present)    
+} 
+    if (timeArray[i] === getHour && (timeArray[i] = 17)) {
+        bar9.classList.add(present)    
+} 
+
+// if statements for the future
+
+    if (timeArray[i] > getHour && (timeArray[i] = 9 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] > getHour && (timeArray[i] = 10 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 11 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 12 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 13 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 14 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 15 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 16 )){ 
+        bar1.classList.add(future) 
+}
+    if (timeArray[i] < getHour && (timeArray[i] = 17 )){ 
+        bar1.classList.add(future) 
+}
+
+
+
+
+
+
+
+
+
+// else {
+//     console.log('future')
+//     bar8.classList.add(future)
+//     bar9.classList.add(future)
+// }};
+
+
+
+function changeClass(){
+
+}
+
+
 
 
 
