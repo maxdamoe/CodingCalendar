@@ -34,6 +34,9 @@ textarea{
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
+  padding-bottom: 5%;
+  padding-left: 2%;
+
 }
 
 .hour {
@@ -63,9 +66,22 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  height:70px;
+  
+
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.timeslot {
+  
+  background-color: #77dd77;
+  height:20px;
+  width:2000px;
+  
+
+}
+
