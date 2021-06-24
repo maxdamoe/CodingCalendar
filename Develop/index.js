@@ -153,7 +153,7 @@ function addToStorage (){
 
 console.log(localStorage)
 
-localStorage.clear()
+
 
 
 
