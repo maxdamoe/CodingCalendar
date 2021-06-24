@@ -51,6 +51,7 @@ textarea{
 .past {
   background-color: #aa1b1b;
   color: white;
+  height:150px;
 }
 
 .present {
