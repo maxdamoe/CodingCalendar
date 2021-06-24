@@ -36,16 +36,14 @@ seventeen = 17
 
 
 
-const poop = Array.from(document.getElementsByClassName('col-6'));
 
-console.log(poop)
 
 
 
 
 let timeArray = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen]
 
-for (var i = 0; i < poop.length; i++) {
+for (var i = 0; i < timeArray.length; i++) {
 
     // if statements for the past 
 
@@ -76,13 +74,13 @@ for (var i = 0; i < poop.length; i++) {
     if (timeArray[i] < getHour && (timeArray[i] = 17 )){
         bar9.classList.add(past)
     
-}}
+}
 
 // // If statements for the present
 
-    if (timeArray[i] === getHour && (timeArray[i] = 9)) {
-        bar1.classList.add(present)    
-} 
+//     if (timeArray[i] === getHour && (timeArray[i] = 9)) {
+//         bar1.classList.add(present)    
+// } 
     if (timeArray[i] === getHour && (timeArray[i] = 10)) {
         bar2.classList.add(present)    
 } 
@@ -114,107 +112,48 @@ for (var i = 0; i < poop.length; i++) {
         bar1.classList.add(future) 
 }
     if (timeArray[i] > getHour && (timeArray[i] = 10 )){ 
-        bar1.classList.add(future) 
+        bar2.classList.add(future) 
 }
-    if (timeArray[i] < getHour && (timeArray[i] = 11 )){ 
-        bar1.classList.add(future) 
+    if (timeArray[i] > getHour && (timeArray[i] = 11 )){ 
+        bar3.classList.add(future) 
 }
-    if (timeArray[i] < getHour && (timeArray[i] = 12 )){ 
-        bar1.classList.add(future) 
+    if (timeArray[i] > getHour && (timeArray[i] = 12 )){ 
+        bar4.classList.add(future) 
 }
-    if (timeArray[i] < getHour && (timeArray[i] = 13 )){ 
-        bar1.classList.add(future) 
+    if (timeArray[i] > getHour && (timeArray[i] = 13 )){ 
+        bar5.classList.add(future) 
 }
-    if (timeArray[i] < getHour && (timeArray[i] = 14 )){ 
-        bar1.classList.add(future) 
+    if (timeArray[i] > getHour && (timeArray[i] = 14 )){ 
+        bar6.classList.add(future) 
 }
-    if (timeArray[i] < getHour && (timeArray[i] = 15 )){ 
-        bar1.classList.add(future) 
+    if (timeArray[i] > getHour && (timeArray[i] = 15 )){ 
+        bar7.classList.add(future) 
 }
-    if (timeArray[i] < getHour && (timeArray[i] = 16 )){ 
-        bar1.classList.add(future) 
+    if (timeArray[i] > getHour && (timeArray[i] = 16 )){ 
+        bar8.classList.add(future) 
 }
-    if (timeArray[i] < getHour && (timeArray[i] = 17 )){ 
-        bar1.classList.add(future) 
-}
+    if (timeArray[i] > getHour && (timeArray[i] = 17 )){ 
+        bar9.classList.add(future) 
+}}
 
 
 
+const nuts = document.getElementsByClassName('saveBtn')
+
+// nuts.addEventListener('click', addToStorage())
 
 
+function addToStorage (){
+ 
+    var text = document.getElementsByClassName('col-6').value;
 
-
-
-
-// else {
-//     console.log('future')
-//     bar8.classList.add(future)
-//     bar9.classList.add(future)
-// }};
-
-
-
-function changeClass(){
-
+    localStorage.setItem('content', text)
+        
 }
 
+console.log(localStorage)
 
-
-
-
-
-// function future(){
-//     console.log("ass")
-// }
-
-// if (poop !== getHour){
-//     future()
-// } else {
-//     //document.getElementsByClassName("hour").classList.add("past")
-//     console.log(pussy)
-// }
-
-
-//push all the ids to an array, and then loop through the array
-
-//IF the schedule hour is in the past based on the current hour, THEN make bar grey
-//IF the schedule hour is the current hour, THEN make bar red
-//IF the schedule hour is in the future based on the current hour, THEN make the bar green
-
-
-
-
-
-
-
-
-
-//if it is an old section, behind the current time, we need the bar to be grey
-
-
-
-//if happening is before current Time, then make the box grey
-
-
-//function inPast (){
-
-
-    // this function will check to see if it is in the past, and if it is, assign to the html the class of past, applying the css for the class past.
-    // YOU CAN USE MULTIPLE CLASSES ON THE SAME ELEMENT!! YES!!!
-
-// if it is the current hour, then we need the bar to be red
-
-// if the bar is in the future, then we need the bar to be green.
-
-
-
-
-
-
-
-
-
-
+localStorage.clear()
 
 
 
