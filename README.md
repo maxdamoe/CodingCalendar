@@ -7,4 +7,4 @@ This is my code calendar project. The colors change based on the time of day, if
 
 
 
-[Link to deployed app](https://maxdamoe.github.io/CodeQuizProject/)
+[Link to deployed app](https://maxdamoe.github.io/CodingCalendar/)
