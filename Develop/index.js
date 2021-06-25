@@ -41,6 +41,7 @@ seventeen = 17
 
 
 
+
 const timeArray = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen]
 
 for (var i = 0; i < timeArray.length; i++) {
@@ -48,13 +49,11 @@ for (var i = 0; i < timeArray.length; i++) {
     // if statements for the past 
 
     if (nine < getHour && (timeArray[i] = 9 )){ 
-        bar1.classList.add(past)
-        console.log(timeArray[0]) 
+        bar1.classList.add(past) 
 }
     if (ten < getHour && (timeArray[i] = 10 )){
         bar2.classList.add(past)
-        console.log(timeArray[0])
-} 
+}
     if (eleven < getHour && (timeArray[i] = 11 )){
         bar3.classList.add(past)
 } 
@@ -84,9 +83,7 @@ for (var i = 0; i < timeArray.length; i++) {
         bar1.classList.add(present)    
 } 
     if (ten === getHour && (timeArray[i] = 10)) {
-        bar2.classList.add(present)
-        console.log(getHour)
-        console.log(timeArray[i])    
+        bar2.classList.add(present) 
 } 
     if (eleven === getHour && (timeArray[i] = 11)) {
         bar3.classList.add(present)    
@@ -142,29 +139,62 @@ for (var i = 0; i < timeArray.length; i++) {
 
 
 
-const nuts = document.getElementsByClassName('saveBtn')
+
 
 // nuts.addEventListener('click', addToStorage())
 
 
-function addToStorage (){
- 
-    var text = document.getElementsByClassName('col-6').value;
 
-    localStorage.setItem('content', text)
-    console.log(localStorage.getItem('content'))
+
+
+
+const nineAMText = document.getElementById("nineAMtext")
+const tenAMText = document.getElementById("tenAMtext")
+const elevenAMText = document.getElementById("elevenAMtext")
+const twelvePMText = document.getElementById("twelvePMtext")
+const onePMText = document.getElementById("onePMtext")
+const twoPMText = document.getElementById("twoPMtext")
+const threePMText = document.getElementById("threePMtext")
+const fourPMText = document.getElementById("fourPMtext")
+const fivePMText = document.getElementById("fivePMtext")
+
+const nuts = document.getElementsByClassName('saveBtn')
+
+
+
+for (var i = 0; i < nuts.length; i++) {
+    nuts[i].addEventListener('click', testing);
+}
+
+
+
+
+function testing(){
+        console.log('testing)')
+        console.log(nineAMText.innerHTML)
+        localStorage.setItem('9amNotes', nineAMText.innerHTML)
+        localStorage.setItem('10amNotes', tenAMText.innerHTML)
+        localStorage.setItem('11amNotes', elevenAMText.innerHTML)
+        localStorage.setItem('12pmNotes', twelvePMText.innerHTML)
+        localStorage.setItem('1pmNotes', onePMText.innerHTML)
+        localStorage.setItem('2pmNotes', twoPMText.innerHTML)
+        localStorage.setItem('3pmNotes', threePMText.innerHTML)
+        localStorage.setItem('4pmNotes', fourPMText.innerHTML)
+        localStorage.setItem('5pmNotes', fivePMText.innerHTML)
         
 }
 
-addToStorage()
-console.log(localStorage)
+nineAMText.innerHTML = localStorage.getItem('9amNotes')
+tenAMText.innerHTML = localStorage.getItem('10amNotes')
+elevenAMText.innerHTML = localStorage.getItem('11amNotes')
+twelvePMText.innerHTML = localStorage.getItem('12pmNotes')
+onePMText.innerHTML = localStorage.getItem('1pmNotes')
+twoPMText.innerHTML = localStorage.getItem('2pmNotes')
+threePMText.innerHTML = localStorage.getItem('3pmNotes')
+fourPMText.innerHTML = localStorage.getItem('4pmNotes')
+fivePMText.innerHTML = localStorage.getItem('5pmNotes')
 
 
 
 
 
-
-
-// if save button clicked, we need to add to local storage
-
-//let happening = document.getElementsByClassName("clicked"
