@@ -3,4 +3,4 @@ Description: This is my coding calendar project. The page updates based on the t
 
 ![image](./Develop/Screenshot.png)
 
-[Link to deployed app](https://maxdamoe.github.io/CodeQuizProject/)
+[Link to deployed app](https://maxdamoe.github.io/CodingCalendar/)
