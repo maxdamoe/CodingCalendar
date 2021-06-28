@@ -1,177 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead">INSERT CURRENT DATE VIA JS</p>
-    </header>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Develop.style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead">INSERT CURRENT DATE VIA JS</p>
+  </header>
 
 
 
 
-    <div class="row">
-        <div class = "col-2"> 
-          <h2>9 AM</h2>
-        </div>
-        
-        <div class="col-8" id="9AM"> 
-          <h2 contentEditable="true" id="nineAMtext">Hello</h2>
-        </div> 
-        
-        <div class = "col-2"> 
-          <button class="saveBtn" id="save9AM"><p>SAVESAVE SAVE</p></button>
-        </div>
 
-    </div> 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>10 AM</h2>
-      </div>
-
-      <div class = "col-8" id="10AM" > 
-        <h2 contentEditable="true" id="tenAMtext">Hello</h2>
-      </div>
-
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-    </div> 
-
-  
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>11 AM</h2>
-      </div>
-
-      <div class = "col-8" id="11AM"> 
-        <h2 contentEditable="true" id="elevenAMtext">Hello</h2>
-      </div>
-
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-
+  <div class="row">
+    <div class="col-2">
+      <h2>9 AM</h2>
     </div>
-    
 
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>12 PM</h2>
-      </div>
-      <div class = "col-8" id="12AM"> 
-        <h2 contentEditable="true" id="twelvePMtext">Hello</h2>
-      </div>
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-    </div> 
+    <div class="col-8" id="9AM">
+      <h2 contentEditable="true" id="nineAMtext">Hello</h2>
+    </div>
 
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>1 PM</h2>
-      </div>
-      <div class = "col-8" id="1PM"> 
-        <h2 contentEditable="true" id="onePMtext">Hello</h2>
-      </div>
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-    </div> 
+    <div class="col-2">
+      <button class="saveBtn" id="save9AM">
+        <p>SAVE</p>
+      </button>
+    </div>
 
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>2 PM</h2>
-      </div>
-      <div class = "col-8" id="2PM"> 
-        <h2 contentEditable="true" id="twoPMtext">Hello</h2>
-      </div>
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-    </div> 
-
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>3 PM</h2>
-      </div>
-      <div class = "col-8" id="3PM"> 
-        <h2 contentEditable="true" id="threePMtext">Hello</h2>
-      </div>
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-    </div> 
-
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>4 PM</h2>
-      </div>
-      <div class = "col-8" id="4PM"> 
-        <h2 contentEditable="true" id="fourPMtext" >Hello</h2>
-      </div>
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-    </div> 
-
-    <div class="row">
-      <div class = "col-2"> 
-        <h2>5 PM</h2>
-      </div>
-      <div class = "col-8"  id="5PM"> 
-        <h2 contentEditable="true" id="fivePMtext">Hello</h2>
-      </div>
-      <div class = "col-2"> 
-        <button class="saveBtn"><p>SAVESAVE SAVE</p></button>
-      </div>
-    </div> 
+  </div>
 
 
 
@@ -191,9 +59,133 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src= "jquery.js"></script>
-    <script src= "index.js"></script>
-  </body>
+
+
+
+
+  <div class="row">
+    <div class="col-2">
+      <h2>10 AM</h2>
+    </div>
+
+    <div class="col-8" id="10AM">
+      <h2 contentEditable="true" id="tenAMtext">Hello</h2>
+    </div>
+
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-2">
+      <h2>11 AM</h2>
+    </div>
+
+    <div class="col-8" id="11AM">
+      <h2 contentEditable="true" id="elevenAMtext">Hello</h2>
+    </div>
+
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-2">
+      <h2>12 PM</h2>
+    </div>
+    <div class="col-8" id="12AM">
+      <h2 contentEditable="true" id="twelvePMtext">Hello</h2>
+    </div>
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      <h2>1 PM</h2>
+    </div>
+    <div class="col-8" id="1PM">
+      <h2 contentEditable="true" id="onePMtext">Hello</h2>
+    </div>
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      <h2>2 PM</h2>
+    </div>
+    <div class="col-8" id="2PM">
+      <h2 contentEditable="true" id="twoPMtext">Hello</h2>
+    </div>
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      <h2>3 PM</h2>
+    </div>
+    <div class="col-8" id="3PM">
+      <h2 contentEditable="true" id="threePMtext">Hello</h2>
+    </div>
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      <h2>4 PM</h2>
+    </div>
+    <div class="col-8" id="4PM">
+      <h2 contentEditable="true" id="fourPMtext">Hello</h2>
+    </div>
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      <h2>5 PM</h2>
+    </div>
+    <div class="col-8" id="5PM">
+      <h2 contentEditable="true" id="fivePMtext">Hello</h2>
+    </div>
+    <div class="col-2">
+      <button class="saveBtn">
+        <p>SAVE</p>
+      </button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
